@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@import url(/src/assets/pictures/fonts/style.css);
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+    max-width: 1920px;
+    background: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navlink{
+  color: black;
+  font-family: 'Mont';
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.html{
+    max-width: 1269px;
+    margin: 0 auto;
+    
+    height: 3053px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* fotter__css */
+
+.footer{
+    background: #3E3C6E;
+}
+
+.footer__row{
+    max-width: 1140px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+
+.footer__left{
+    max-width: 50%;
+}
+
+.company__name{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 64px;
+    color: #fff;
+    font-family: 'Mont';
+}
+
+.aboutUs{
+    margin-top: 20px; 
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.15px;
+    color: #fff;
+}
+
+.weOn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.weOn__items{
+    list-style-type: none;
+    margin: 10px;
+}
+
+.weOn__item{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__right{
+}
+
+.right__items > h3{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Mont';
+    
+}
+
+.right__items > a, p{
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Mont';
+    margin-top: 10px;
+}
+
+.right__items{
+    margin-bottom: 20px;
+}
+
+.tel > a{
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Mont';
+    margin-right: 60px;
 }
