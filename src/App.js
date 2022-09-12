@@ -1,5 +1,7 @@
 import './App.css';
 import logo from './assets/pictures/logo.png'
+import './assets/modal.css'
+import './assets/modal'
 
 
 
@@ -22,6 +24,23 @@ function App() {
         <div className='products' id='products'>
 
         </div>
+
+
+        {/* -------------- modal window ------------------ */}
+        <body>
+          <div class="popup">
+            <div class="popup__container">
+              <button type="button" class="close-button"></button>
+              <h2 class="popup__title">A cat popup</h2>
+              <img class="popup__image" src="https://i.imgur.com/CYJ0KLR.jpg" alt="A cute cat"/>
+            </div>
+          </div>
+          <button class="popup-button">Call cat</button>
+          <script src="./script.js"></script>
+        </body>
+        {/* -------------- modal window (end) ------------------ */}
+
+
         <div className='about' id='about'>
 
         </div>
