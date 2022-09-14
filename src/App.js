@@ -1,7 +1,9 @@
 import './App.css';
+import { BrowserRouter as Route} from 'react-router-dom'
 import logo from './assets/pictures/logo.png'
 import './assets/modal.css'
-import './assets/modal'
+import Example from './assets/modal'
+
 
 
 
@@ -27,17 +29,9 @@ function App() {
 
 
         {/* -------------- modal window ------------------ */}
-        <body>
-          <div class="popup">
-            <div class="popup__container">
-              <button type="button" class="close-button"></button>
-              <h2 class="popup__title">A cat popup</h2>
-              <img class="popup__image" src="https://i.imgur.com/CYJ0KLR.jpg" alt="A cute cat"/>
-            </div>
-          </div>
-          <button class="popup-button">Call cat</button>
-          <script src="./script.js"></script>
-        </body>
+
+        <Route path='/Example' exact component={Example} />
+        
         {/* -------------- modal window (end) ------------------ */}
 
 

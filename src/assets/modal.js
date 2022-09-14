@@ -1,15 +1,40 @@
-const callButton = document.querySelector('.popup-button');
-const popup = document.querySelector('.popup');
-const closeButton = popup.querySelector('.close-button');
+import {createRoot} from 'react-dom/client';
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
-function popupToggle () {
-  popup.classList.toggle('popup_opened');
+function Example() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Вызвать
+      </Button>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Титул модалки</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Окно модалки
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Закрыть
+          </Button>
+          <Button variant="primary">Понятно</Button>
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
 }
+const root = createRoot(Example)
+root.render(Example)
 
-function closeOnBlack (event) {
-  if (event.target === event.currentTarget) popupToggle();
-}
-
-callButton.addEventListener('click', popupToggle);
-closeButton.addEventListener('click', popupToggle);
-popup.addEventListener('click', closeOnBlack);
+export default Example;
