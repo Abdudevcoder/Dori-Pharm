@@ -30,7 +30,9 @@ function App() {
 
         {/* -------------- modal window ------------------ */}
 
-        <Route path='/Example' exact component={Example} />
+        <Route path='/Example' exact>
+          <Example/>
+        </Route>
         
         {/* -------------- modal window (end) ------------------ */}
 

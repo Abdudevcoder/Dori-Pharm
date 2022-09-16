@@ -1,14 +1,15 @@
-import {createRoot} from 'react-dom/client';
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function Example() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <>
+    <div>
       <Button variant="primary" onClick={handleShow}>
         Вызвать
       </Button>
@@ -28,13 +29,10 @@ function Example() {
           <Button variant="secondary" onClick={handleClose}>
             Закрыть
           </Button>
-          <Button variant="primary">Понятно</Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
 }
-const root = createRoot(Example)
-root.render(Example)
 
 export default Example;
