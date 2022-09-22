@@ -9,6 +9,7 @@
 body{
     max-width: 1920px;
     background: #fff;
+    margin: 0 auto;
 }
 
 a {
@@ -25,8 +26,8 @@ a {
 .html{
     max-width: 1269px;
     margin: 0 auto;
-    
-    height: 3053px;
+    position: relative;
+    min-height: 3053px;
 }
 
 /* Body */
@@ -62,9 +63,9 @@ a {
 }
 
 
-.info.picture {
-    width: 636px;
-    height: 600px;
+.info-picture {
+    max-width: 636px;
+    max-height: 600px;
     background: #D9D9D9;
     border-radius: 0px 50px 50px 0px;
 }
@@ -72,7 +73,13 @@ a {
 /* About Us */
 
 .about__inner{
-    display: inline;
+    margin: 10px;
+}
+
+.about__items{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
 }
 
 .picture{
@@ -84,9 +91,17 @@ a {
 }
 .about__text{
     display: block;
+    margin: 0 10px;
+    padding: 10px;
 }
 .about__text > p{
     color: #000000;
+    max-width: 636px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
 }
 
 /* footer__css */
@@ -104,12 +119,15 @@ a {
 .footer__inner{
     display: flex;
     justify-content: space-between;
-
     margin: 0 auto;
 }
 
 .footer__left{
-    max-width: 50%;
+    background: grey;
+}
+
+.footer__right{
+    background: red;
 }
 
 .company__name{
@@ -173,4 +191,27 @@ a {
     font-size: 24px;
     font-family: 'Mont';
     margin-right: 60px;
+}
+
+@media screen and (max-width: 576px) {
+    .about__items{
+      flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .info{
+        display: block;
+    }
+    .footer__inner{
+        display: block;
+    }
+
+    .footer__row{
+        width: none;
+    }
+
+    .footer__left{
+        width: none;
+    }
 }

@@ -12,81 +12,78 @@ function App() {
   return (
     <div className='html'>
       {/* ----------------navbar---------------------- */}
-      <Route path='/BasicExample' exact>
-          <BasicExample/>
-      </Route>
+        <Route path='/BasicExample' exact>
+            <BasicExample/>
+        </Route>
       {/* ----------------navbar (end)---------------------- */}
 
 
       {/* ----------------body---------------------- */}
-      <div className='body'>
-        <div className='info' id='info'>
-          <div className='info-text'>
-            <div className="text__row">
-            Мы Doripharm представляем американскую фармацевтическую компанию Safrel pharmaceuiticals и являемся ведущими поставщиками из США в Центральную Азию.
+        <div className='body'>
+          <div className='info' id='info'>
+            <div className='info-text'>
+              <div className="text__row">
+              Мы Doripharm представляем американскую фармацевтическую компанию Safrel pharmaceuiticals и являемся ведущими поставщиками из США в Центральную Азию.
+              </div>
+            </div>
+
+            <div className='info-picture'>
+              <img src={logoPic} alt='logo'></img>
             </div>
           </div>
 
-          <div className='info-picture'>
-            <img src={logoPic} alt='logo'></img>
-          </div>
         </div>
 
+      {/* ----------------body (end)---------------------- */}
+
+      {/* -------------- products ------------------ */}
+        <div id="products">
+          <h1>Продукция</h1>
+          <Route path='/Cards' exact>
+            <Cards/>
+          </Route>
+        </div>
+        
+      {/* -------------- products (end) ------------------ */}
         <div className="about" id="about">
           <div className="about__row">
             <h1>О нас</h1>
             <div className="about__inner">              
-                <div className="picture">
+                <div className="about__items">
+                  <div className="picture">
                     
-                </div>
-                <div className="about__text">
-                  <p>
-                  Наша компания является поставщиком безрецептурных препаратов, бадов, витаминов и пищевых добавок (травяных, минеральных и диетических).
-                  </p>
+                    </div>
+                    <div className="about__text">
+                      <p>
+                      Наша компания является поставщиком безрецептурных препаратов, бадов, витаминов и пищевых добавок (травяных, минеральных и диетических).
+                      </p>
+                    </div>
                 </div>
                 
-                <div className="picture">
+                <div className="about__items">
+                  <div className="picture">
                     
-                </div>
-                <div className="about__text">
-                  <p>
-                  Мы осуществляем поставку безопасных, надежных и эффективных препаратов для наших потребителей. Вся наша продукция изготовляется в США.Наши препараты соответствуют высокому требованию качества стандартов Соединенных Штатов Америки.
-                  </p>
+                    </div>
+                    <div className="about__text">
+                      <p>
+                      Мы осуществляем поставку безопасных, надежных и эффективных препаратов для наших потребителей. Вся наша продукция изготовляется в США.Наши препараты соответствуют высокому требованию качества стандартов Соединенных Штатов Америки.
+                      </p>
+                    </div>
                 </div>
 
-                <div className="picture">
-                    
-                </div>
-                <div className="about__text">
-                  <p>
-                  Наши препараты прошли все проверки на качество, и безопасность  в главных эпидемиологических инстанциях Республике Узбекистана, где получили сертификаты безопасности, и качества препаратов. 
-                  </p>
+                <div className="about__items">
+                    <div className="picture">
+                    </div>
+                    <div className="about__text">
+                      <p>
+                        Наши препараты прошли все проверки на качество, и безопасность  в главных эпидемиологических инстанциях Республике Узбекистана, где получили сертификаты безопасности, и качества препаратов. 
+                      </p>
+                    </div>
                 </div>
 
             </div>
           </div>
         </div>
-      </div>
-
-        {/* ----------------body (end)---------------------- */}
-
-        {/* -------------- modal window ------------------ */}
-        <div>
-          <h1>Продукция</h1>
-        </div>
-        <Route path='/Cards' exact>
-          <Cards/>
-        </Route>
-        
-        {/* -------------- modal window (end) ------------------ */}
-        <div>
-
-        <div className='about' id='about'>
-
-        </div>
-
-      </div>
-
 
 
 

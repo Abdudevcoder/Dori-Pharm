@@ -15,11 +15,11 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Продукция</Nav.Link>
-            <Nav.Link href="#link">О нас</Nav.Link>
-            <Nav.Link href="#link">Контакты</Nav.Link>
+            <Nav.Link href="#products">Продукция</Nav.Link>
+            <Nav.Link href="#about">О нас</Nav.Link>
+            <Nav.Link href="#fotter">Контакты</Nav.Link>
           </Nav>
-          <Button variant="outline-danger">Связаться с нами</Button>        
+          <Button href="#fotter" variant="outline-danger">Связаться с нами</Button>        
         </Navbar.Collapse>
       </Container>
     </Navbar>
