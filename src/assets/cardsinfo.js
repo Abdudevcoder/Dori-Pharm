@@ -16,12 +16,12 @@ let data = [
     {
         image:vitaminE,
         name: "Витамин Е",
-        url:"/infopages",
+        url:"#",
     },
     {
         image:foil,
         name: "Фолиевая кислота",
-        url:"/infopages",
+        url:"#",
     },
     {
         image:omega3,

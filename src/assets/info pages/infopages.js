@@ -20,12 +20,12 @@ function InfoPages() {
 
             </div>
             <div className='downside'>
-                <div class="tabs">
+                <div className="tabs">
                     <div id="tab3" class="tab">
-                        <ul class="nav nav-tabs">
+                        <ul className="nav nav-tabs">
                             <li><a href="#tab1">Description</a></li>
                             <li><a href="#tab2">How it works</a></li>
-                            <li class="active"><a href="#tab3">Drawbacks</a></li>
+                            <li className="active"><a href="#tab3">Drawbacks</a></li>
                         </ul>
                         <ul>
                             <li>Tab bar should be duplicated on each tab.</li>
@@ -34,9 +34,9 @@ function InfoPages() {
                         </ul>
                     </div>
                     <div id="tab2" class="tab">
-                        <ul class="nav nav-tabs">
+                        <ul className="nav nav-tabs">
                             <li><a href="#tab1">Description</a></li>
-                            <li class="active"><a href="#tab2">How it works</a></li>
+                            <li className="active"><a href="#tab2">How it works</a></li>
                             <li><a href="#tab3">Drawbacks</a></li>
                         </ul>
                         <ol>
@@ -44,9 +44,9 @@ function InfoPages() {
                             <li>If <code>:target</code> matches a tab, show it and hide all following siblings.</li>
                         </ol>
                     </div>
-                    <div id="tab1" class="tab">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#tab1">Description</a></li>
+                    <div id="tab1" className="tab">
+                        <ul className="nav nav-tabs">
+                            <li className="active"><a href="#tab1">Description</a></li>
                             <li><a href="#tab2">How it works</a></li>
                             <li><a href="#tab3">Drawbacks</a></li>
                         </ul>
