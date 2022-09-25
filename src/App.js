@@ -8,6 +8,7 @@ import Cards from './assets/cards';
 
 
 
+
 function App() {
   return (
     <div className='html'>
@@ -17,7 +18,7 @@ function App() {
         </Route>
       {/* ----------------navbar (end)---------------------- */}
 
-
+     
       {/* ----------------body---------------------- */}
         <div className='body'>
           <div className='info' id='info'>

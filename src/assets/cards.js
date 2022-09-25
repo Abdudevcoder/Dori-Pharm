@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data from './cardsinfo';
-import {useNavigate, Link} from 'react-router-dom';
+import {Routes, Route, useNavigate} from 'react-router-dom';
+import InfoPages from './info pages/infopages';
 
 
 
@@ -9,11 +10,11 @@ import {useNavigate, Link} from 'react-router-dom';
 
 function Cards() {
   
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   
-  // const navigateToInfopages = () => {
-  //   navigate('/infopages');
-  // }
+  const navigateToInfopages = () => {
+    navigate('/infopages');
+  }
   
 
 
@@ -28,7 +29,10 @@ function Cards() {
                   <img src={value.image} alt="Card cap"/>
                   <div className="card-body">
                     <h5 className="card-title">{value.name}</h5>
-                    <a href={value.url}>Подробнее</a>
+                    <button onClick={navigateToInfopages}>Подробнее</button>
+                    <Routes>
+                      <Route path="/infopages" element={<InfoPages />} />
+                    </Routes>
                   </div>
                 </div>
               </div>

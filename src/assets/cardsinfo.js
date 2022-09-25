@@ -6,6 +6,11 @@ import vitaminC from './pictures/5.png'
 import zync25 from './pictures/6.png'
 import zync50 from './pictures/7.png'
 import biotine from './pictures/8.png'
+import calcium600 from './pictures/9.png'
+import calciumd3 from './pictures/10.png'
+import vitaminB from './pictures/11.png'
+import vitaminD from './pictures/12.png'
+
 
 let data = [
     {
@@ -46,6 +51,26 @@ let data = [
     {
         image:biotine,
         name: "Биотин",
+        url:"#",
+    },
+    {
+        image:calcium600,
+        name: "Кальций 600 с витамином D3",
+        url:"#",
+    },
+    {
+        image:calciumd3,
+        name: "Кальций D3 магний цинк",
+        url:"#",
+    },
+    {
+        image:vitaminB,
+        name: "Витамин B12",
+        url:"#",
+    },
+    {
+        image:vitaminD,
+        name: "Витамин D3",
         url:"#",
     },
 ]

@@ -2,7 +2,7 @@ import './infopages.css';
 
 
 
-function infoPages() {
+function InfoPages() {
     return (
         <div className='container'>
             <div className='uperside'>
@@ -58,4 +58,4 @@ function infoPages() {
     );
 }
 
-export default infoPages;
+export default InfoPages;
