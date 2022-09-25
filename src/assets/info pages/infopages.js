@@ -33,7 +33,7 @@ function InfoPages() {
                             <li>In IE &lt; 9 all tabs are shown.</li>
                         </ul>
                     </div>
-                    <div id="tab2" class="tab">
+                    <div id="tab2" className="tab">
                         <ul className="nav nav-tabs">
                             <li><a href="#tab1">Description</a></li>
                             <li className="active"><a href="#tab2">How it works</a></li>
