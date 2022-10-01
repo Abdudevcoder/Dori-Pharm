@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 
 
 
-function BasicExample() {
+function NavBar() {
   return (
     <Navbar bg="white" expand="lg">
       <Container>
@@ -26,4 +26,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default NavBar;

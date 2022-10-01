@@ -9,7 +9,7 @@
 body{
     max-width: 1920px;
     background: #fff;
-    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 a {
@@ -24,17 +24,17 @@ a {
 
 
 .html{
-    max-width: 1269px;
+    
+}
+
+.conteiner{
+    max-width: 1296px;
     margin: 0 auto;
-    position: relative;
-    min-height: 3053px;
 }
 
 /* Body */
 
 .info {
-    max-width: 1296px;
-    max-height: 600px;
     margin: 20px auto;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
@@ -64,8 +64,8 @@ a {
 
 
 .info-picture {
-    max-width: 636px;
-    max-height: 600px;
+    height: auto;
+    width: 100%;
     background: #D9D9D9;
     border-radius: 0px 50px 50px 0px;
 }
@@ -84,8 +84,7 @@ a {
 
 .picture{
     display: block;
-    height: 400px;
-    width: 636px;
+    min-width: 300px;
     background-color: #6e6e6e;
     border-radius: 50px;
 }
@@ -112,22 +111,26 @@ a {
 
 .footer__row{
     max-width: 1140px;
-    margin: 20px;
     padding: 20px;
 }
 
 .footer__inner{
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
 }
 
 .footer__left{
-    background: grey;
+    max-width: 400px;
 }
 
 .footer__right{
-    background: red;
+    /* margin-left: 40px; */
+    max-width: 500px;
+}
+
+.tel > a, .tel > a:hover, .mail, .mail:hover{
+    color: #fff;
+    text-decoration: none;
 }
 
 .company__name{
@@ -193,10 +196,13 @@ a {
     margin-right: 60px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 786px) {
     .about__items{
       flex-direction: row;
     }
+    /* .info-picture > img{
+        position: cover;
+    } */
 }
 
 @media screen and (max-width: 900px){
@@ -204,7 +210,8 @@ a {
         display: block;
     }
     .footer__inner{
-        display: block;
+        display: inline;
+        margin: 0 auto;
     }
 
     .footer__row{
@@ -213,5 +220,8 @@ a {
 
     .footer__left{
         width: none;
+    }
+    .about__items{
+        display: block;
     }
 }
