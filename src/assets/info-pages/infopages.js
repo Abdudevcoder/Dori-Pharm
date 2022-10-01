@@ -1,5 +1,6 @@
 import './infopages.css';
-import BasicTabs from './assets/info pages/tabmenu';
+import { BrowserRouter as Route } from 'react-router-dom';
+import BasicTabs from './tabmenu';
 
 
 

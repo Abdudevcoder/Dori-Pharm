@@ -1,8 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom' 
 import data from './cardsinfo';
 import './cards.css'
 import '../App.css';
-// import InfoPages from './info pages/infopages';
+// import InfoPages from './info-pages/infopages';
 
 
 
@@ -11,29 +12,22 @@ import '../App.css';
 
 function Cards() {
   
-  // const navigate = useNavigate();
-  
-  // const navigateToInfopages = () => {
-  //   navigate('/infopages');
-  // }
-  
-
-
   return (
     <div id="products">
       <div className="conteiner">
       <h1>Продукция</h1>
-        <div className="row mt-4">
+        <div className="products__inner">
           {data.map((value, index) => {
-            return <div className="col-lg-3 col-md-7">
+            return <div>
               <div >
-                <div className="card mb-5" style={{
-                  width: '18rem'
-                }}>
+                <div className="card mb-5">
                   <img src={value.image} alt="Card cap"/>
                   <div className="card-body">
                     <h5 className="card-title">{value.name}</h5>
                     <a href={value.url} className="btn btn-primary">Подробнее</a>
+                    <Link to={value.url} className='nav-links'>
+                     Подробнее
+                    </Link>
                   </div>
                 </div>
               </div>

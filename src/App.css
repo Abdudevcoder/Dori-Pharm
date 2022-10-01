@@ -7,9 +7,11 @@
 
 
 body{
-    max-width: 1920px;
+    width: 1920px;
     background: #fff;
-    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display: contents;
 }
 
 a {
@@ -21,10 +23,8 @@ a {
   font-family: 'Mont';
 }
 
-
-
-.html{
-    
+.logo{
+    max-width: 197px;
 }
 
 .conteiner{
@@ -43,12 +43,15 @@ a {
 
 }
 
+.info--mobile{display: none;}
+
 .info-text {
     max-width: 596px;
     margin-left: 3%;
     margin-top: 8%;
-
 }
+
+
 
 .text__row{
     font-family: 'Mont';
@@ -63,12 +66,25 @@ a {
 }
 
 
-.info-picture {
+.info-logo {
     height: auto;
     width: 100%;
+    min-width: 300px;
     background: #D9D9D9;
     border-radius: 0px 50px 50px 0px;
 }
+
+/* Products */
+.products__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    max-width: 360px;
+}
+/* End products */
 
 /* About Us */
 
@@ -82,9 +98,14 @@ a {
     margin-top: 50px;
 }
 
+.beetwen--mobile{
+    display: none;
+}
+
 .picture{
     display: block;
-    min-width: 300px;
+    width: 50%;
+    height: 400px;
     background-color: #6e6e6e;
     border-radius: 50px;
 }
@@ -92,6 +113,7 @@ a {
     display: block;
     margin: 0 10px;
     padding: 10px;
+    width: 50%;
 }
 .about__text > p{
     color: #000000;
@@ -124,7 +146,6 @@ a {
 }
 
 .footer__right{
-    /* margin-left: 40px; */
     max-width: 500px;
 }
 
@@ -159,6 +180,10 @@ a {
     justify-content: flex-start;
 }
 
+.weOn--mobile{
+    display: none;
+}
+
 .weOn__items{
     list-style-type: none;
     margin: 10px;
@@ -168,6 +193,8 @@ a {
     color: #fff;
     text-decoration: none;
 }
+
+
 
 
 
@@ -196,19 +223,26 @@ a {
     margin-right: 60px;
 }
 
-@media screen and (max-width: 786px) {
-    .about__items{
-      flex-direction: row;
-    }
-    /* .info-picture > img{
-        position: cover;
-    } */
-}
-
 @media screen and (max-width: 900px){
-    .info{
-        display: block;
+    .conteiner{
+        margin: 0 auto;
     }
+    .info{
+        display: none;
+    }
+
+    .info--mobile{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .info--mobile> .info-text{
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .info-text> p{
+        color: #000000;
+    }
+
     .footer__inner{
         display: inline;
         margin: 0 auto;
@@ -224,4 +258,100 @@ a {
     .about__items{
         display: block;
     }
+}
+@media screen and (max-width: 786px) {
+    .about__items{
+      flex-direction: row;
+    }
+    .beetwen{
+        display: none;
+    }
+    .beetwen--mobile{
+        display: block;
+    }
+    .picture{
+        width: 100%;
+    }
+    .about__text{
+        width: 100%;
+    }
+    .card{
+        width: 196px;
+    }
+}
+@media screen and (max-width: 428px){
+    .logo{
+        position: center;
+    }
+    .card{
+        max-width: 196px;
+    }
+    .info--mobile > .info-logo{
+        max-width: 404px;
+    }
+    .info-text{
+        max-width: 356px;
+    }
+    .info-text > p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .footer__left> .aboutUs{
+        display: none;
+    }
+    .about__text{
+        margin: 0 auto;
+        max-width: 404px;
+    }
+    .about__text>p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .right__items > p, .tel > a{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .mail{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .weOn{
+        display: none;
+    }
+    .weOn--mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 385px) {
+    .card{
+        max-width: 150px;
+    }
+    #mail{
+        font-size: 16px;
+    }
+    body{
+        width: none;
+    }
+    .footer{
+        width: none;
+    }
+    .conteiner{
+        width: none;
+    }
+
 }

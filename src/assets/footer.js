@@ -1,4 +1,7 @@
 import '../App.css';
+import fb from './pictures/Facebook.png'
+import ig from './pictures/Instagram.png'
+import tg from './pictures/Telegram.png'
 
 function Footer() {
     return (
@@ -9,11 +12,22 @@ function Footer() {
                 <div className="footer__left">
                     <h1 className="company__name">Doripharm Future</h1>
                     <p className="aboutUs">Мы являемся ведущими поставщиками из США в Центральную Азию.</p>
-                    
                     <ul className="weOn">
-                      <li className="weOn__items"><a className="weOn__item" href="/">Inst</a></li>
-                      <li className="weOn__items"><a className="weOn__item" href="/">fb</a></li>
-                      <li className="weOn__items"><a className="weOn__item" href="/">tg</a></li>
+                      <li className="weOn__items">
+                          <a className="weOn__item" href="/">
+                          <img src={fb} className="icon" alt='logo'></img>
+                          </a>
+                        </li>
+                      <li className="weOn__items">
+                        <a className="weOn__item" href="/">
+                        <img src={ig} className="icon" alt='logo'></img>
+                        </a>
+                      </li>
+                      <li className="weOn__items">
+                        <a className="weOn__item" href="/">
+                        <img src={tg} className="icon" alt='logo'></img>
+                        </a>
+                      </li>
                     </ul>
                 </div>
                 <div className="footer__right">
@@ -33,10 +47,15 @@ function Footer() {
 
                     <div className="right__items">
                       <h3>Почта:</h3>
-                      <a className="mail" href="mailto:doripharmfuture@gmail.com">doripharmfuture@gmail.com</a>
+                      <a className="mail" id="mail" href="mailto:doripharmfuture@gmail.com">doripharmfuture@gmail.com</a>
                     </div>
                 </div>
             </div>
+            <ul className="weOn--mobile">
+              <li className="weOn__items"><a className="weOn__item" href="/"><img src={fb} className="icon" alt='logo'></img></a></li>
+              <li className="weOn__items"><a className="weOn__item" href="/"><img src={ig} className="icon" alt='logo'></img></a></li>
+              <li className="weOn__items"><a className="weOn__item" href="/"><img src={tg} className="icon" alt='logo'></img></a></li>
+            </ul>
           </div>
           </div>
       </div>
