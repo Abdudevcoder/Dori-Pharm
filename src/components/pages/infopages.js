@@ -1,6 +1,6 @@
 import './infopages.css';
-import { BrowserRouter as Route } from 'react-router-dom';
-import BasicTabs from './tabmenu';
+// import { BrowserRouter as Route } from 'react-router-dom';
+import BasicTabs from '../tabmenu';
 
 
 
@@ -23,9 +23,7 @@ function InfoPages() {
 
             </div>
             <div className='downside'>
-            <Route path='/BasicTabs' exact>
-                <BasicTabs/>
-            </Route>
+            <BasicTabs/>
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import '../App.css';
-import fb from './pictures/Facebook.png'
-import ig from './pictures/Instagram.png'
-import tg from './pictures/Telegram.png'
+import fb from '../assets/pictures/Facebook.png'
+import ig from '../assets/pictures/Instagram.png'
+import tg from '../assets/pictures/Telegram.png'
 
 function Footer() {
     return (
