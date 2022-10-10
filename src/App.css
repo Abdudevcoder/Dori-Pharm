@@ -84,6 +84,11 @@ a {
 .card{
     max-width: 360px;
 }
+
+.nav-links{
+    text-decoration: none;
+}
+
 /* End products */
 
 /* About Us */

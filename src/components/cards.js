@@ -24,7 +24,6 @@ function Cards() {
                   <img src={value.image} alt="Card cap"/>
                   <div className="card-body">
                     <h5 className="card-title">{value.name}</h5>
-                    <a href={value.url} className="btn btn-primary">Подробнее</a>
                     <Link to={value.url} className='nav-links'>
                      Подробнее
                     </Link>
