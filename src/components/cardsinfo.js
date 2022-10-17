@@ -17,7 +17,7 @@ let data = [
         key: vitaminE,
         image:vitaminE,
         name: "Витамин Е",
-        url:"./info-pages/infopages.js",
+        url:"/InfoPages",
     },
     {   
         key: foil,

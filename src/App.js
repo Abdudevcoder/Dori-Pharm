@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import NavBar from './components/navbar';
 import Home from './components/pages/home';
-// import InfoPages from './components/pages/infopages'
+import InfoPages from './components/pages/infopages'
 
 
 
@@ -13,8 +13,8 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path='/' exact element={<Home />} />
-          {/* <Route path='/InfoPages' element={InfoPages} /> */}
+          <Route path='/' element={<Home />} />
+          <Route path='/InfoPages' element={<InfoPages />} />
         </Routes>
       </Router>
     </>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import data from './cardsinfo';
 import './cards.css'
 import '../App.css';
-// import InfoPages from './info-pages/infopages';
+// import InfoPages from './pages/infopages';
 
 
 
@@ -18,7 +18,7 @@ function Cards() {
       <h1>Продукция</h1>
         <div className="products__inner">
           {data.map((value, index) => {
-            return <div>
+            return <div key={index}>
               <div >
                 <div className="card mb-5">
                   <img src={value.image} alt="Card cap"/>
