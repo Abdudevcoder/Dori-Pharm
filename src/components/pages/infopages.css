@@ -1,8 +1,9 @@
-@import "//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css";
+/* @import "//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css"; */
+@import url(/src/assets/fonts/style.css);
 
 .container {
   width: 1296px;
-  height: 1092px;
+  /* height: 1092px; */
   left: 312px;
   top: 150px;
 
@@ -11,6 +12,9 @@
   border-radius: 50px;
 }
 
+.uperside{
+  display: table;
+}
 
 .picture {
   width: 596px;
@@ -18,43 +22,54 @@
   left: 352px;
   top: 190px;
   background-color: transparent;
+  float: left;
 }
 
+.header {
+  float: right;
+  padding-top: 10%;
+}
 
 .head-text {
   width: 255px;
   height: 61px;
   left: 972px;
   top: 190px;
-
-  font-family: 'Inter';
+  font-family: 'Mont';
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 35px;
   line-height: 61px;
-  /* identical to box height */
-
-
   color: #000000;
 }
 
 .info-text {
+  font-family: 'Mont';
   width: 596px;
   height: 288px;
   left: 972px;
   top: 275px;
-
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  /* or 24px */
-
   color: #7E7E7E;
 }
 
-
+.downside-text {
+  
+  color: #7E7E7E;
+  font-size: 16px;
+  font-family: 'Mont';
+  padding-bottom: 2%;
+  padding-left: 2%;
+}
+.downside-text-bolder {
+  margin: 0 auto;
+  font-family: 'Mont';
+  color: #424242;
+  font-size: 16px;
+}
 
 
 

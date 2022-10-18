@@ -13,7 +13,7 @@ function InfoPages() {
                 <div className='picture'>
                     <img className='picture' alt='vitaminE' src={vitaminE}></img>
                 </div>
-                <div className='text'>
+                <div className='header'>
                     <div className='head-text'>Витамин Е</div>
                     <div className='info-text'>
                     Витамин Е позволяет улучшить питание кожи и волос, снизить их сухость, укрепить ногти.
@@ -26,7 +26,7 @@ function InfoPages() {
 
             </div>
             <div className='downside'>
-            <BasicTabs/>
+                <BasicTabs/>
             </div>
         </div>
     );

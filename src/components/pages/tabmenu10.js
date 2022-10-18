@@ -50,20 +50,19 @@ export default function BasicTabs() {
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="Состав" {...a11yProps(0)} />
-          <Tab label="Показание" {...a11yProps(1)} />
-          <Tab label="Противопоказания" {...a11yProps(2)} />
-          <Tab label="Способ хранения" {...a11yProps(3)} />
+          <Tab label="Противопоказания" {...a11yProps(1)} />
+          <Tab label="Способ хранения" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
         <table>
         <tr>
           <td className='downside-text-bolder'>Активное вещество:</td>
-          <td className='downside-text'>Витамин Е (в виде dl-альфа-токоферолацетата) - 400 МЕ (IU).</td>
+          <td className='downside-text'>Цианокобаламин 250 мкг.</td>
         </tr>
         <tr>
           <td className='downside-text-bolder'>Вспомогательное вещество:</td>
-          <td className='downside-text'>Желатин, глицерин, вода, соевое масло.</td>
+          <td className='downside-text'>Дикальцийфосфат, маннит, микрокристаллиеская целлюлоза, стеарат магния,диоксид кремния,стеариновая кислота</td>
         </tr>
         <tr>
           <td className='downside-text-bolder'>Способ применения и дозы:</td>
@@ -75,21 +74,18 @@ export default function BasicTabs() {
         </tr>
         <tr>
           <td className='downside-text-bolder'>Форма выпуска:</td>
-          <td className='downside-text'>60 штук капсул во флаконе.</td>
+          <td className='downside-text'>60 таблеток во флаконе.</td>
         </tr>
         <tr>
           <td className='downside-text-bolder'>Дневная рекомендованная норма %DV:</td>
-          <td className='downside-text'>Одна (1) мягкая капсула.</td>
+          <td className='downside-text'>Одна (1) таблетка.</td>
         </tr>
         </table>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <p className='downside-text'>Профилактика гиповитаминоза. Рекомендуется принимать: после реконвалесценции (выздоровление),высокие физические нагрузки, при пожилом возраст, заболевания связочного аппарата и мышц, при первичной мышечной дистрофии, при переутомлении. При дегенеративном и пролиферативном изменении суставов.</p>
-      </TabPanel>
-      <TabPanel value={value} index={2}>
         <p className='downside-text'>Индивидуальная непереносимость компонентов. Проконсультируйтесь с врачом перед использованием, если вы беременны, кормите грудью, принимаете лекарства, имеете заболевание или планируете медицинскую процедуру. Прекратите использование и обратитесь к врачу, при возникновений побочных реакций.</p>   
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={2}>
         <p className='downside-text'>Хранить в прохладном сухом недоступном для детей месте.</p>
         <p className='downside-text'>Хранить при комнатной температуре  (15 °-30°С).</p>
         <p className='downside-text'>Держите упаковку плотно закрытой.</p>
