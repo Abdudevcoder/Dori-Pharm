@@ -1,4 +1,7 @@
 import '../App.css';
+import usa from '../assets/pictures/usa.jpg'
+import bad from '../assets/pictures/bad.jpg'
+import safrel from '../assets/pictures/safrel.jpg'
 
 
 function About(){
@@ -11,7 +14,7 @@ function About(){
               <div className="about__inner">
                   <div className="about__items">
                     <div className="picture">
-                      
+                      <img src={bad} className="info-logo" alt='logo'></img>
                     </div>
                     <div className="about__text">
                       <p>
@@ -28,13 +31,13 @@ function About(){
                     </div>
 
                     <div className="picture">
-                      
+                      <img src={usa} className="info-logo" alt='logo'></img>
                     </div>
                   </div>
 
                   <div className="about__items beetwen--mobile">
                     <div className="picture">
-                      
+                      <img src={usa} className="info-logo" alt='logo'></img>
                     </div>
 
                     <div className="about__text">
@@ -46,6 +49,7 @@ function About(){
 
                   <div className="about__items">
                       <div className="picture">
+                        <img src={safrel} className="info-logo" alt='logo'></img>
                       </div>
                       <div className="about__text">
                         <p>
