@@ -18,6 +18,12 @@ a {
   text-decoration: none;
 }
 
+.nav-body {
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+}
+
 .navlink{
   color: black;
   font-family: 'Mont';
@@ -25,11 +31,20 @@ a {
 
 .logo{
     max-width: 197px;
+    max-height: 75px;
 }
+
 
 .conteiner{
     max-width: 1296px;
     margin: 0 auto;
+}
+
+.conteiner-intro{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 /* Body */
@@ -67,6 +82,15 @@ a {
 
 
 .info-logo {
+    height: auto;
+    width: 100%;
+    min-width: 300px;
+    background: #D9D9D9;
+    border-radius: 50px;
+}
+
+
+.about-logo{
     height: auto;
     width: 100%;
     min-width: 300px;

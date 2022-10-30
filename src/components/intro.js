@@ -4,7 +4,7 @@ import logoPic from '../assets/pictures/pic-logo.png'
 function Intro() {
     return (
         <div className='body'>
-            <div className="conteiner">
+            <div className="conteiner-intro">
                 <div className='info' id='info'>
                     <div className='info-text'>
                         <div className="text__row">
