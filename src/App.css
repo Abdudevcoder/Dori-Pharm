@@ -252,6 +252,13 @@ a {
     margin-bottom: 20px;
 }
 
+.authority{
+    font-family: "Mont";
+    text-align: center;
+    color: #fff;
+    background-color: #000000;
+}
+
 .tel > a{
     color: #fff;
     font-size: 24px;

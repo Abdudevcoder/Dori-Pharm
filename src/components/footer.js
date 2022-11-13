@@ -57,7 +57,12 @@ function Footer() {
             </ul>
           </div>
           </div>
+          <div className='authority'>
+            Made by Abdudevcoder on GitHub
+          </div>
       </div>
+
+      
     )
 }
 
