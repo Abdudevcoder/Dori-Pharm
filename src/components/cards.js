@@ -21,7 +21,7 @@ function Cards() {
             return <div key={index}>
               <div >
                 <div className="card mb-5">
-                  <img src={value.image} alt="Card cap"/>
+                  <img className='card-image' src={value.image} alt="Card cap"/>
                   <div className="card-body">
                     <h5 className="card-title">{value.name}</h5>
                     <Link to={value.url} className='nav-links'>

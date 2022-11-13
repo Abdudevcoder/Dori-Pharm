@@ -1,15 +1,15 @@
-import vitaminE from '../assets/pictures/1.png'
-import foil from '../assets/pictures/2.png'
-import omega3 from '../assets/pictures/3.png'
-import vita from '../assets/pictures/4.png'
-import vitaminC from '../assets/pictures/5.png'
-import zync25 from '../assets/pictures/6.png'
-import zync50 from '../assets/pictures/7.png'
-import biotine from '../assets/pictures/8.png'
-import calcium600 from '../assets/pictures/9.png'
-import calciumd3 from '../assets/pictures/10.png'
-import vitaminB from '../assets/pictures/11.png'
-import vitaminD from '../assets/pictures/12.png'
+import vitaminE from '../assets/pictures/1.jpg'
+import foil from '../assets/pictures/2.jpg'
+import omega3 from '../assets/pictures/3.jpg'
+import vita from '../assets/pictures/4.jpg'
+import vitaminC from '../assets/pictures/5.jpg'
+import zync25 from '../assets/pictures/6.jpg'
+import zync50 from '../assets/pictures/7.jpg'
+import biotine from '../assets/pictures/8.jpg'
+import calcium600 from '../assets/pictures/9.jpg'
+import calciumd3 from '../assets/pictures/10.jpg'
+import vitaminB from '../assets/pictures/11.jpg'
+import vitaminD from '../assets/pictures/12.jpg'
 
 
 let data = [
@@ -44,6 +44,12 @@ let data = [
         url:"/InfoPages4",
     },
     {
+        key: biotine,
+        image:biotine,
+        name: "Биотин",
+        url:"/InfoPages7",
+    },
+    {
         key: zync25,
         image:zync25,
         name: "Глюконат цинка 25мг",
@@ -55,12 +61,7 @@ let data = [
         name: "Глюконат цинка 50мг",
         url:"/InfoPages6",
     },
-    {
-        key: biotine,
-        image:biotine,
-        name: "Биотин",
-        url:"/InfoPages7",
-    },
+
     { 
         key: calcium600,
         image:calcium600,
