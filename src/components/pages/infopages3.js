@@ -1,7 +1,7 @@
 
 import './infopages.css';
 import BasicTabs from './tabmenu3';
-import vitaminE from '../../assets/pictures/4.png'
+import vitaminE from '../../assets/pictures/4.jpg'
 
 
 

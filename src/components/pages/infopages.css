@@ -14,7 +14,7 @@
 }
 
 .picture {
-  max-width: 596px;
+  max-width: auto;
   max-height: auto;
   background-color: transparent;
 }

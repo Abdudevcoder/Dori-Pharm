@@ -14,12 +14,12 @@ function Footer() {
                     <p className="aboutUs">Мы являемся ведущими поставщиками из США в Центральную Азию.</p>
                     <ul className="weOn">
                       <li className="weOn__items">
-                          <a className="weOn__item" href="/">
+                          <a className="weOn__item" href="https://www.facebook.com/people/Dori-Pharm/100087478015541/">
                           <img src={fb} className="icon" alt='logo'></img>
                           </a>
                         </li>
                       <li className="weOn__items">
-                        <a className="weOn__item" href="/">
+                        <a className="weOn__item" href="https://instagram.com/doripharm">
                         <img src={ig} className="icon" alt='logo'></img>
                         </a>
                       </li>
@@ -51,8 +51,8 @@ function Footer() {
                 </div>
             </div>
             <ul className="weOn--mobile">
-              <li className="weOn__items"><a className="weOn__item" href="/"><img src={fb} className="icon" alt='logo'></img></a></li>
-              <li className="weOn__items"><a className="weOn__item" href="/"><img src={ig} className="icon" alt='logo'></img></a></li>
+              <li className="weOn__items"><a className="weOn__item" href="https://www.facebook.com/people/Dori-Pharm/100087478015541/"><img src={fb} className="icon" alt='logo'></img></a></li>
+              <li className="weOn__items"><a className="weOn__item" href="https://instagram.com/doripharm"><img src={ig} className="icon" alt='logo'></img></a></li>
               <li className="weOn__items"><a className="weOn__item" href="https://t.me/doripharm"><img src={tg} className="icon" alt='logo'></img></a></li>
             </ul>
           </div>
