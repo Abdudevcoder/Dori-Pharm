@@ -6,6 +6,7 @@
 }
 
 
+
 body{
     width: 1920px;
     background: #fff;
@@ -45,6 +46,39 @@ a {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+}
+
+
+/* Sertificate */
+
+.sertificate-window{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sertificate-window-op{
+    padding-bottom: 5%;
+}
+
+.sertificate-text{
+    color: #3E3C6E;
+    font-family: 'Mont';
+    text-align: center;
+}
+
+.sertificate-link{
+    font-size: 20px;
+    text-decoration: none;
+    color: #3E3C6E;
+    font-family: 'Mont';
+}
+
+.sertificate-text-mobile{
+    display: none;
+}
+
+.sertificate-link-mobile{
+    display: none;
 }
 
 /* Body */
@@ -390,6 +424,27 @@ a {
     }
 }
 @media screen and (max-width: 385px) {
+    .sertificate-window{
+        display: none;
+    }
+    .sertificate-text-mobile{
+        padding-top: 10%;
+        color: #000000;
+        font-family: 'Mont';
+        display: block;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .sertificate-link-mobile{
+        text-decoration: none;
+        color: #000000;
+        font-family: 'Mont';
+        display: block;
+        font-size: 15px;
+        padding: 5% 10% 5% 5%;
+    
+    }
     .card-title{
         font-size: 16px;
     }

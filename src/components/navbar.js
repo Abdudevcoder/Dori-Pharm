@@ -20,6 +20,7 @@ function NavBar() {
             <Nav.Link href="#products">Продукция</Nav.Link>
             <Nav.Link href="#about">О нас</Nav.Link>
             <Nav.Link href="#fotter">Контакты</Nav.Link>
+            <Nav.Link href="/Sertificates">Сертификаты</Nav.Link>
           </Nav>
           <Button href="tel:+998 94 0718110" variant="outline-danger">Связаться с нами</Button>        
         </Navbar.Collapse>

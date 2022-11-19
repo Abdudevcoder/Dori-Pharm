@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import NavBar from './components/navbar';
 import Home from './components/pages/home';
+import Sertificates from './components/pages/sertificates'
 import InfoPages from './components/pages/infopages'
 import InfoPages1 from './components/pages/infopages1'
 import InfoPages2 from './components/pages/infopages2'
@@ -25,6 +26,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/Sertificates' element={<Sertificates />} />
           <Route path='/InfoPages' element={<InfoPages />} />
           <Route path='/InfoPages1' element={<InfoPages1 />} />
           <Route path='/InfoPages2' element={<InfoPages2 />} />
