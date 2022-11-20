@@ -51,6 +51,16 @@ a {
 
 /* Sertificate */
 
+.ser-link{
+    text-decoration: none;
+    color:#737373;
+    padding-top: 2.3%;
+}
+
+.ser-link:hover{
+    color: #4C4C4C;
+}
+
 .sertificate-window{
     max-width: 1200px;
     margin: 0 auto;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom' 
 import '../App.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -20,7 +21,7 @@ function NavBar() {
             <Nav.Link href="#products">Продукция</Nav.Link>
             <Nav.Link href="#about">О нас</Nav.Link>
             <Nav.Link href="#fotter">Контакты</Nav.Link>
-            <Nav.Link href="/Sertificates">Сертификаты</Nav.Link>
+            <Link to={{pathname:"/Sertificates"}} className='ser-link'>Сертификаты</Link>
           </Nav>
           <Button href="tel:+998 94 0718110" variant="outline-danger">Связаться с нами</Button>        
         </Navbar.Collapse>
